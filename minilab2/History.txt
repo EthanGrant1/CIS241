@@ -1,0 +1,175 @@
+    1  apt-get
+    2  sudo apt-get update
+    3  sudo apt-get upgrade
+    4  sudo apt-get dist-upgrade
+    5  echo $0
+    6  ssh grantet@eos01.cis.gvsu.edu
+    7  ssh grantet@eos30.cis.gvsu.edu
+    8  ssh grantet@35.39.165.61
+    9  echo 
+   10  echo "[network]" | sudo tee /etc/wsl.conf
+   11  echo "generateResolvConf = false" | sudo tee -a /etc/wsl.conf
+   12  sudo mv /etc/resolve.conf / etc/resolv.conf.bak
+   13  sudo mv /etc/resolve.conf /etc/resolv.conf.bak
+   14  sudo mv /etc/resolv.conf /etc/resolv.conf.bak
+   15  echo "nameserver 148.61.1.10" | sudo tee /etc/resolv.conf
+   16  ssh grantet@eos01.cis.gvsu.edu
+   17  scp
+   18  scp grantet@eos.cis.gvsu.edu:/home/grantet/avengers.csv ~/Desktop
+   19  scp grantet@eos01.cis.gvsu.edu:/home/grantet/avengers.csv ~/Desktop
+   20  scp grantet@eos01.cis.gvsu.edu:/home/grantet/avengers.csv /mnt/c/\$Recycle.Bin/
+   21  scp grantet@eos01.cis.gvsu.edu:/home/grantet/avengers.csv /mnt/c/Users/Golden\ Gamer/Desktop/
+   22  ssh grantet@eos01.cis.gvsu.edu
+   23  exit
+   24  scp -p grantet@eos01.cis.gvsu.edu:/home/grantet/minilab1
+   25  man scp
+   26  scp -p[grantet@eos01
+   27  scp -p
+   28  scp [-p
+   29  man scp
+   30  scp -p -r grantet@eos01.cis.gvsu.edu:/home/grantet/minilab1 /mnt/c/Users/Golden\ Gamer/Desktop/
+   31  man rsync
+   32  rsync -vnr /mnt/c/Users/Golden\ Gamer/Desktop/minilab1/ grantet@eos01.cis.gvsu.edu:~
+   33  rsync -vn /mnt/c/Users/Golden\ Gamer/Desktop/minilab1/ grantet@eos01.cis.gvsu.edu:~
+   34  rsync -vnr /mnt/c/Users/Golden\ Gamer/Desktop/minilab1/ grantet@eos01.cis.gvsu.edu:~
+   35  rsync -vnr /mnt/c/Users/Golden\ Gamer/Desktop/minilab1 grantet@eos01.cis.gvsu.edu:~
+   36  ssh grantet@eos01.cis.gvsu.edu
+   37  rsync -vr /mnt/c/Users/Golden\ Gamer/Desktop/minilab1 grantet@eos01.cis.gvsu.edu:~
+   38  ssh grantet@eos01.cis.gvsu.edu
+   39  exit
+   40  cd ~
+   41  cd .ssh
+   42  vim config
+   43  ssh eos01
+   44  vim config
+   45  ssh eos01
+   46  vim config
+   47  ssh eos01
+   48  vim config
+   49  ssh eos01
+   50  vim config
+   51  cd ~
+   52  vim config
+   53  cd ~/.ssh
+   54  vim config
+   55  ssh eos01
+   56  vim config
+   57  cd ~
+   58  ls -al ~/.ssh
+   59  ssh-keygen
+   60  ls
+   61  ls -l
+   62  cd ~/.ssh
+   63  ls -l
+   64  ssh-copy-id -i "grantet@eos01.cis.gvsu.edu"
+   65  vim config
+   66  ssh-copy-id -i "grantet@eos01.cis.gvsu.edu"
+   67  ssh eos01@cis.gvsu.edu
+   68  ssh grantet@eos01.cis.gvsu.edu
+   69  cd ~
+   70  ssh grantet@eos01.cis.gvsu.edu
+   71  cd ~/grantet/.ssh
+   72  cd /.ssh
+   73  cd ~/.ssh
+   74  ls
+   75  cat config 
+   76  vim config
+   77  ssh
+   78  ssh grantet@eos01.cis.gvsu.edu
+   79  rm config 
+   80  ls -al
+   81  ls
+   82  cd ~
+   83  ssh
+   84  ssh grantet@eos01.cis.gvsu.edu
+   85  cd ~/.ssh
+   86  vim config
+   87  ls 
+   88  cd ~
+   89  ssh grantet@eos01.cis.gvsu.edu
+   90  cd ~/.ssh
+   91  cim config
+   92  vim config
+   93  cd~
+   94  cd ~
+   95  ssh grantet@eos01
+   96  ssh eos01
+   97  chmod 600 ~/.ssh/config
+   98  ssh eos01
+   99  ls -al ~/.ssh
+  100  ssh-copy-id -i "grantet@eos01.cis.gvsu.edu"
+  101  ssh eos01
+  102  exit
+  103  cd ~
+  104  cd /
+  105  ls
+  106  cd ~
+  107  ls
+  108  cd ..
+  109  ls
+  110  cd ..
+  111  ls
+  112  cd ~/Desktop
+  113  cd ~
+  114  ls
+  115  cd ~/.
+  116  ls
+  117  cd ~
+  118  cd Desktop
+  119  cd ~/Desktop
+  120  ls
+  121  cd /home/grantet/.
+  122  ls
+  123  man cd
+  124  cd ~grantet/
+  125  cd ~bin/
+  126  cd ~
+  127  cd ../
+  128  cd ~
+  129  cd .landscape/
+  130  ls
+  131  cd ..
+  132  ls
+  133  cd /mnt/c/Users/Golden\ Gamer/Desktop/
+  134  ls
+  135  cd ~
+  136  cat Desktop 
+  137  clear
+  138  ls
+  139  more Desktop 
+  140  man mv
+  141  mv --target-directory=/mnt/c/Users/Golden\ Gamer/Desktop/CIS241\ Files\ and\ Stuff/minilab1/
+  142  mv --help
+  143  man mv
+  144  mv -v Desktop /mnt/c/Users/Golden\ Gamer/Desktop/
+  145  cd ~
+  146  ls
+  147  exit
+  148  history
+  149  man wc
+  150  man ec
+  151  man wc
+  152  wc history
+  153  wc
+  154  man history
+  155  cd ~
+  156  ls
+  157  ls -al
+  158  man history
+  159  clear
+  160  wc
+  161  man cp
+  162  cp /home/grantet/.bash_history /mnt/c/Users/Golden\ Gamer/Desktop/
+  163  wc /home/grantet/.bash_history
+  164  history
+  165  wc --lines ~/.bash_history
+  166  man wc
+  167  man tr
+  168  clear
+  169  history
+  170  >
+  171  history < /mnt/c/Users/Golden\ Gamer/Desktop/
+  172  history < /mnt/c/Users/Golden\ Gamer/Desktop/history.txt
+  173  history < /mnt/c/Users/Golden\ Gamer/Desktop/ newhistory.txt
+  174  clear
+  175  history > newhistory
