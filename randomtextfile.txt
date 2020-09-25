@@ -1,2 +1,2 @@
 this is a file with some text in it
-I'm adding some more lines
+adding some lines to the file
