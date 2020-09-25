@@ -1,0 +1,29 @@
+tar -zxf aclImdb_v1.tar.gz
+mkdir interfiles
+cd aclImdb
+cat train/pos/*_9.txt > ../interfiles/ReviewsPos.txt
+cat train/pos/*_10.txt >> ../interfiles/ReviewsPos.txt
+cat train/neg/*_1.txt > ../interfiles/ReviewsNeg.txt
+cat train/neg/*_2.txt >> ../interfiles/ReviewsNeg.txt
+tr -d "'" < ../interfiles/ReviewsPos.txt > ../interfiles/ReviewsPosNoApostrophe.txt
+tr -d "'" < ../interfiles/ReviewsNeg.txt > ../interfiles/ReviewsNegNoApostrophe.txt
+tr -c [:alpha:] '\n' < ../interfiles/ReviewsPosNoApostrophe.txt > ../interfiles/WordListPos.txt
+tr -c [:alpha:] '\n' < ../interfiles/ReviewsNegNoApostrophe.txt > ../interfiles/WordListNeg.txt
+tr [:upper:] [:lower:] < ../interfiles/WordListPos.txt > ../interfiles/WordListPosIgnoreCase.txt
+tr [:upper:] [:lower:] < ../interfiles/WordListNeg.txt > ../interfiles/WordListNegIgnoreCase.txt
+sort ../interfiles/WordListPosIgnoreCase.txt > ../interfiles/WordListPosSorted.txt
+sort ../interfiles/WordListNegIgnoreCase.txt > ../interfiles/WordListNegSorted.txt
+uniq -c ../interfiles/WordListPosSorted.txt > ../interfiles/WordListPosCount.txt
+uniq -c ../interfiles/WordListNegSorted.txt > ../interfiles/WordListNegCount.txt
+sort ../interfiles/WordListPosCount.txt > ../interfiles/WordListPosSmallBig.txt
+sort ../interfiles/WordListNegCount.txt > ../interfiles/WordListNegSmallBig.txt
+grep -v 'br$\| $\|[0-9]$' ../interfiles/WordListPosSmallBig.txt > ../interfiles/WordListPosGrep.txt
+grep -v 'br$\| $\|[0-9]$' ../interfiles/WordListNegSmallBig.txt > ../interfiles/WordListNegGrep.txt
+grep -vwf ../stopwords.txt ../interfiles/WordListPosGrep.txt > ../interfiles/WordListPosStopWords.txt
+grep -vwf ../stopwords.txt ../interfiles/WordListNegGrep.txt > ../interfiles/WordListNegStopWords.txt
+sort -r ../interfiles/WordListPosStopWords.txt > ../interfiles/WordListPosBigSmall.txt
+sort -r ../interfiles/WordListNegStopWords.txt > ../interfiles/WordListNegBigSmall.txt
+head --lines=12 ../interfiles/WordListPosBigSmall.txt > ../interfiles/FinalWordList.txt
+echo "---END POSITIVE---" >> ../interfiles/FinalWordList.txt
+head --lines=12 ../interfiles/WordListNegBigSmall.txt >> ../interfiles/FinalWordList.txt
+cat ../interfiles/FinalWordList.txt
