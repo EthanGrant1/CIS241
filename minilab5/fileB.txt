@@ -1,4 +1,4 @@
 a different line
 line
-line
+different line
 line
