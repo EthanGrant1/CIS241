@@ -29,7 +29,7 @@ END {
 
 print "State, Overall Change"
 print "----------------------"
-# For loop that rints the State and ChangeArray line-by-line
+# For loop that prints the State and ChangeArray line-by-line
 for (key in ChangeArray)
 print key", "ChangeArray[key]
 }
