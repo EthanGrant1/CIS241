@@ -1,0 +1,24 @@
+The cumulative sum for sums[0] is 0
+The cumulative sum for sums[1] is 1
+The cumulative sum for sums[2] is 3
+The cumulative sum for sums[3] is 6
+The cumulative sum for sums[4] is 10
+The cumulative sum for sums[5] is 15
+The cumulative sum for sums[6] is 21
+The cumulative sum for sums[7] is 28
+The cumulative sum for sums[8] is 36
+The cumulative sum for sums[9] is 45
+The cumulative sum for sums[10] is 55
+The cumulative sum for sums[11] is 66
+The value of the sum for sumpointer + 0 is: 0
+The value of the sum for sumpointer + 1 is: 1
+The value of the sum for sumpointer + 2 is: 3
+The value of the sum for sumpointer + 3 is: 6
+The value of the sum for sumpointer + 4 is: 10
+The value of the sum for sumpointer + 5 is: 15
+The value of the sum for sumpointer + 6 is: 21
+The value of the sum for sumpointer + 7 is: 28
+The value of the sum for sumpointer + 8 is: 36
+The value of the sum for sumpointer + 9 is: 45
+The value of the sum for sumpointer + 10 is: 55
+The value of the sum for sumpointer + 11 is: 66
