@@ -1,0 +1,3 @@
+this is a file with some text in it
+Hello there, I added another line.
+adding some lines to the file.
